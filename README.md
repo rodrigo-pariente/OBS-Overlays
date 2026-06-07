@@ -13,7 +13,7 @@ Um sistema de overlays para o OBS baseado em widgets, design consistente e integ
 
 - Widgets utilitários como **Balão de Siga-Me** temporizado e widget de objetivos.
 
-> [!INFO]
+> [!NOTE]
 > A API da twitch é consumida através de clientes montados com auxílio da biblioteca <a href="https://pytwitchapi.dev/en/stable/">`pythonTwitchAPI`</a>
 
 
@@ -21,19 +21,19 @@ Um sistema de overlays para o OBS baseado em widgets, design consistente e integ
 
 A partir do diretorio base, execute o script de configuração dos ambientes virtuais
 
-`$ .scripts/setup-environment.sh`
+`$ ./scripts/setup-environment.sh`
 
 Ative o Bot de leitura do Chat com
 
-`$ .scripts/run-twitch-bot.sh`
+`$ ./scripts/run-twitch-bot.sh`
 
 Ative a inscrição de eventos da Twitch com
 
-`$ .scripts/run-twitch-follow.sh`
+`$ ./scripts/run-twitch-follow.sh`
 
 Ative o servidor web de Widgets com
 
-`$ .scripts/run-widgets.sh`
+`$ ./scripts/run-widgets.sh`
 
 Acesse `localhost:5000` e veja os widgets disponíveis. É possível usá-los como qualquer outro overlay de OBS.
 
