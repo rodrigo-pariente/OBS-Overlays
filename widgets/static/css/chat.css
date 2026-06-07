@@ -1,0 +1,15 @@
+.chat {
+}
+
+.chat-body {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.user {
+  color: var(--p1);
+}
+
+.msg {
+  color: var(--g1);
+}

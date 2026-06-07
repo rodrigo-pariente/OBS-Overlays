@@ -1,0 +1,12 @@
+#followme {
+  padding: 30px;
+  width: fit-content;
+  min-height: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.followme-text {
+  font-weight: 600;
+  color: var(--b1);
+}

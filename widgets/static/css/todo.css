@@ -1,0 +1,11 @@
+.todo-body {
+  display: grid;
+  grid-template-columns: 3ch 1fr;
+  gap: 0.5rem;
+}
+
+.mark {
+}
+
+.text {
+}

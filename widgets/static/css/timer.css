@@ -1,0 +1,10 @@
+.chat {
+}
+
+.user {
+  color: var(--p1);
+}
+
+.msg {
+  color: var(--g1);
+}

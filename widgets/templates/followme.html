@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Chat da Twitch</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/img/favicon.svg') }}">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='/js/followme.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/followme.css') }}">
+  </head>
+
+  <body>
+    <div class="block">
+      <div id="followme" class="bg-white followme">
+        <b class="followme-text">Bem vindos a live!</b>
+      </div>
+    </div>
+  </body>
+</html>

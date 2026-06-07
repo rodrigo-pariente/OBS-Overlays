@@ -1,0 +1,17 @@
+#follow {
+  background-color: var(--b2);
+}
+
+.black-shadow {
+  box-shadow: 1px 1px 1px var(--b3), -1px -1px 1px var(--b3);
+}
+
+.follow-body {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.follower-name {
+  color: var(--p1);
+  font-weight: 800;
+}

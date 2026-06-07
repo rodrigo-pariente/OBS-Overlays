@@ -1,0 +1,35 @@
+.bg-green {
+  background-color: var(--g3);
+}
+
+.shadow-green {
+  box-shadow: var(--g1);
+}
+
+.fg-white {
+  color: var(--g1);
+}
+
+.bg-white {
+  background-color: var(--g1);
+}
+
+.bg-black {
+  background-color: var(--b2);
+}
+
+.fg-black {
+  color: var(--b2);
+}
+
+.purple {
+  color: var(--p1);
+}
+
+.red {
+  color: var(--r3);
+}
+
+.yellow {
+  color: var(--y1);
+}
