@@ -8,6 +8,7 @@ import json
 import pathlib
 import asyncio
 import subprocess
+import shlex
 from colorama import Fore, Style
 
 
@@ -22,7 +23,7 @@ USER_SCOPE = [AuthScope.MODERATOR_READ_FOLLOWERS]
 USER_ID = "verdeitorres"
 
 async def on_follow(data: ChannelFollowEvent):
-    subprocess.run("notify-send -w -a Twitch -u critical 'NOVO SEGUIDOR'")
+    subprocess.run(shlex.split(f"notify-send -w -a Twitch -u critical 'NOVO SEGUIDOR' '{data.event.user_name} é um anjinho!'"))
     print(f"{Fore.MAGENTA}{data.event.user_name}{Style.RESET_ALL} 💜")
 
     # Followers History - Follow Widget
@@ -32,12 +33,12 @@ async def on_follow(data: ChannelFollowEvent):
     else:
         followers = []
 
-    while len(followers) >= 10:
+    while len(followers) >= 3:
         followers.pop(0)
 
     followers.append(data.event.user_name)
     with open("../common/follow_history.json", "w", encoding="utf8") as jf:
-        json.dump(followers, jf)
+        json.dump(followers, jf, indent=4)
 
 async def run():
     twitch = await Twitch(APP_ID, APP_SECRET)

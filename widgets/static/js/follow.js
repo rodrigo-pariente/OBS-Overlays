@@ -12,7 +12,7 @@ $(document).ready(function() {
                     console.log('[DEBUG] follower: ' + follower)
 
                     $('.follow-body').append(
-                        '<span><span class="follower-name">' + follower + '</span> é um anjinho!</span>'
+                        '<span><span class="follower-name">' + follower + '</span> é um bom samaritano!</span>'
                     )
                 }
             }

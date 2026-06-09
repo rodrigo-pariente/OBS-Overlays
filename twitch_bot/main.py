@@ -41,7 +41,7 @@ async def on_message(msg: ChatMessage):
     lines.append([msg.user.name, msg.text])
 
     with open("../common/chat_history.json", "w", encoding="utf8") as f:
-        json.dump(lines, f)
+        json.dump(lines, f, indent=4)
 
 
 async def run():
